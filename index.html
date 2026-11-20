@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VeriOrigin — See the edit. Read the record. Keep the original.</title>
+<meta name="description" content="See exactly where an image was changed, read the record inside it, and get the untouched original back." />
+<meta name="theme-color" content="#08080a" />
+<meta property="og:title" content="VeriOrigin — See the edit. Read the record. Keep the original." />
+<meta property="og:description" content="Medical CT. Natural images. Remote sensing. Document images." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" as="image" href="assets/img/med-pane-tampered.png?v=20261126" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body
+  data-extracted="EXTRACTED"
+  data-scanning="SCANNING"
+  data-regions="EDITS FOUND"
+  data-restoring="RESTORING"
+  data-exact="EXACT COPY"
+  data-px="PX">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" data-header>
+  <div class="header__inner">
+    <a class="brand" href="index.html" aria-label="VeriOrigin home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 1.2 28.8 8.5v15L16 30.8 3.2 23.5v-15L16 1.2Z" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round" opacity=".68"/>
+        <path d="M16 3 26.2 6.6v7.9c0 7-4.3 11.6-10.2 14.4C10.1 26.1 5.8 21.5 5.8 14.5V6.6L16 3Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" opacity=".86"/>
+        <path d="M16 9.2v13.6" stroke="#F26D6D" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M9.2 16h13.6" stroke="#5B8CFF" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span>VeriOrigin</span>
+    </a>
+    <nav class="header__nav" aria-label="Main">
+      <span class="lang">
+        <a href="index.html" class="is-active" aria-current="page">EN</a><i></i><a href="zh.html">中文</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 01 · Medical CT -->
+  <section class="panel panel--medical panel--first" data-panel="medical" aria-label="Medical CT">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/med-record.png?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>Read the record.</h2>
+          <dl class="record">
+            <div class="record__row"><dt>Source</dt><dd>LIDC-IDRI</dd></div>
+            <div class="record__row"><dt>Modality</dt><dd>CT</dd></div>
+            <div class="record__row"><dt>Slice</dt><dd>42</dd></div>
+            <div class="record__row"><dt>Payload</dt><dd>100 bits</dd></div>
+            <div class="record__row"><dt>Localiser F1</dt><dd>0.9940</dd></div>
+            <div class="record__row"><dt>Mask</dt><dd>irregular</dd></div>
+          </dl>
+          <p class="record__foot">Recovered from the image · 100-bit payload</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>See the edit.</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/med-pane-cover.png?v=20261126" alt="" />
+            <figcaption>Original</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/med-pane-tampered.png?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>Tampered</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/med-pane-mask.png?v=20261126" alt="" />
+            <figcaption>Mask</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/med-pane-pred.png?v=20261126" alt="" />
+            <figcaption>Prediction</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>Keep the original.</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/med-pane-stego.png?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/med-pane-cover.png?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>10,517</b> PX</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>01</b> Medical CT</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>SCANNING</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="Record"></button>
+      <button data-go="1" aria-label="Edits" class="is-active"></button>
+      <button data-go="2" aria-label="Original"></button>
+    </div>
+  </section>
+
+  <!-- 02 · Natural images -->
+  <section class="panel panel--natural" data-panel="natural" aria-label="Natural images">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/nat-record.webp?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>Read the record.</h2>
+          <dl class="record">
+            <div class="record__row"><dt>Source</dt><dd>TGIF2</dd></div>
+            <div class="record__row"><dt>Sample</dt><dd>104782</dd></div>
+            <div class="record__row"><dt>Editor</dt><dd>flux1dev</dd></div>
+            <div class="record__row"><dt>Payload</dt><dd>100 bits</dd></div>
+            <div class="record__row"><dt>Localiser F1</dt><dd>0.9978</dd></div>
+            <div class="record__row"><dt>Size</dt><dd>512 × 512</dd></div>
+          </dl>
+          <p class="record__foot">Recovered from the image · 100-bit payload</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>See the edit.</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/nat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Original</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/nat-pane-tampered.webp?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>Tampered</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/nat-pane-mask.webp?v=20261126" alt="" />
+            <figcaption>Mask</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/nat-pane-pred.webp?v=20261126" alt="" />
+            <figcaption>Prediction</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>Keep the original.</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/nat-pane-stego.webp?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/nat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>56,465</b> PX</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>02</b> Natural images</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>SCANNING</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="Record"></button>
+      <button data-go="1" aria-label="Edits" class="is-active"></button>
+      <button data-go="2" aria-label="Original"></button>
+    </div>
+  </section>
+
+  <!-- 03 · Remote sensing -->
+  <section class="panel panel--satellite" data-panel="satellite" aria-label="Remote sensing">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/sat-record.webp?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>Read the record.</h2>
+          <dl class="record">
+            <div class="record__row"><dt>Source</dt><dd>Sentinel-2 L2A</dd></div>
+            <div class="record__row"><dt>Chip</dt><dd>339</dd></div>
+            <div class="record__row"><dt>Payload</dt><dd>100 bits</dd></div>
+            <div class="record__row"><dt>Localiser F1</dt><dd>0.9901</dd></div>
+            <div class="record__row"><dt>Mask</dt><dd>irregular</dd></div>
+            <div class="record__row"><dt>Size</dt><dd>512 × 512</dd></div>
+          </dl>
+          <p class="record__foot">Recovered from the image · 100-bit payload</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>See the edit.</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/sat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Original</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/sat-pane-tampered.webp?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>Tampered</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/sat-pane-mask.webp?v=20261126" alt="" />
+            <figcaption>Mask</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/sat-pane-pred.webp?v=20261126" alt="" />
+            <figcaption>Prediction</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>Keep the original.</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/sat-pane-stego.webp?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/sat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>8,930</b> PX</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>03</b> Remote sensing</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>SCANNING</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="Record"></button>
+      <button data-go="1" aria-label="Edits" class="is-active"></button>
+      <button data-go="2" aria-label="Original"></button>
+    </div>
+  </section>
+
+  <!-- 04 · Document images -->
+  <section class="panel panel--legal" data-panel="legal" aria-label="Document images">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/legal-record.webp?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>Read the record.</h2>
+          <dl class="record">
+            <div class="record__row"><dt>Source</dt><dd>AIForge-Doc</dd></div>
+            <div class="record__row"><dt>Page</dt><dd>000000437.png</dd></div>
+            <div class="record__row"><dt>Payload</dt><dd>100 bits</dd></div>
+            <div class="record__row"><dt>Localiser F1</dt><dd>0.9972</dd></div>
+            <div class="record__row"><dt>Size</dt><dd>512 × 512</dd></div>
+            <div class="record__row"><dt>Field</dt><dd>altered</dd></div>
+          </dl>
+          <p class="record__foot">Recovered from the image · 100-bit payload</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>See the edit.</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/legal-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Original</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/legal-pane-tampered.webp?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>Tampered</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/legal-pane-mask.webp?v=20261126" alt="" />
+            <figcaption>Mask</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/legal-pane-pred.webp?v=20261126" alt="" />
+            <figcaption>Prediction</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>Keep the original.</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/legal-pane-stego.webp?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/legal-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>4,681</b> PX</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>04</b> Document images</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>SCANNING</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="Record"></button>
+      <button data-go="1" aria-label="Edits" class="is-active"></button>
+      <button data-go="2" aria-label="Original"></button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>© 2026 VeriOrigin Technologies</span>
+    <span class="footer__right">
+      <a href="zh.html">中文</a>
+    </span>
+  </div>
+  <div class="footer__credits">Images: LIDC-IDRI (CT) · Sentinel-2 L2A (ESA) · AIForge-Doc · TGIF2 · Masks &amp; document: VeriOrigin</div>
+</footer>
+<script src="assets/js/scenes.js?v=20261125" defer></script>
+</body>
+</html>

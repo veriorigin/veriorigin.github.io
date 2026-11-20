@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>归源 — 看见改动。读取记录。保留原图。</title>
+<meta name="description" content="看见图像被改动的确切位置，读取图像里的记录，取回未被修改的原图。" />
+<meta name="theme-color" content="#08080a" />
+<meta property="og:title" content="归源 — 看见改动。读取记录。保留原图。" />
+<meta property="og:description" content="医学 CT。自然图像。遥感影像。文档图像。" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/noto-sans-sc.woff2" as="font" type="font/woff2" crossorigin />
+
+<link rel="preload" as="image" href="assets/img/med-pane-tampered.png?v=20261126" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body
+  data-extracted="已提取"
+  data-scanning="扫描中"
+  data-regions="发现改动"
+  data-restoring="还原中"
+  data-exact="完全一致"
+  data-px="像素">
+
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="header" data-header>
+  <div class="header__inner">
+    <a class="brand" href="zh.html" aria-label="归源首页">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 1.2 28.8 8.5v15L16 30.8 3.2 23.5v-15L16 1.2Z" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round" opacity=".68"/>
+        <path d="M16 3 26.2 6.6v7.9c0 7-4.3 11.6-10.2 14.4C10.1 26.1 5.8 21.5 5.8 14.5V6.6L16 3Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" opacity=".86"/>
+        <path d="M16 9.2v13.6" stroke="#F26D6D" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M9.2 16h13.6" stroke="#5B8CFF" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span>归源</span><em class="brand__en">VeriOrigin</em>
+    </a>
+    <nav class="header__nav" aria-label="主导航">
+      <span class="lang">
+        <a href="index.html">EN</a><i></i><a href="zh.html" class="is-active" aria-current="page">中文</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 01 · 医学 CT -->
+  <section class="panel panel--medical panel--first" data-panel="medical" aria-label="医学 CT">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/med-record.png?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>读取记录。</h2>
+          <dl class="record">
+            <div class="record__row"><dt>来源</dt><dd>LIDC-IDRI</dd></div>
+            <div class="record__row"><dt>模态</dt><dd>CT</dd></div>
+            <div class="record__row"><dt>切片</dt><dd>42</dd></div>
+            <div class="record__row"><dt>载荷</dt><dd>100 位</dd></div>
+            <div class="record__row"><dt>定位 F1</dt><dd>0.9940</dd></div>
+            <div class="record__row"><dt>掩膜</dt><dd>不规则</dd></div>
+          </dl>
+          <p class="record__foot">从图像中恢复 · 100 位载荷</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>看见这处改动。</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/med-pane-cover.png?v=20261126" alt="" />
+            <figcaption>原图</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/med-pane-tampered.png?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>篡改图</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/med-pane-mask.png?v=20261126" alt="" />
+            <figcaption>掩膜</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/med-pane-pred.png?v=20261126" alt="" />
+            <figcaption>预测掩膜</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>保留原图。</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/med-pane-stego.png?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/med-pane-cover.png?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>10,517</b> 像素</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>01</b> 医学 CT</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>扫描中</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="上一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="下一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="记录"></button>
+      <button data-go="1" aria-label="改动" class="is-active"></button>
+      <button data-go="2" aria-label="原图"></button>
+    </div>
+  </section>
+
+  <!-- 02 · 自然图像 -->
+  <section class="panel panel--natural" data-panel="natural" aria-label="自然图像">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/nat-record.webp?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>读取记录。</h2>
+          <dl class="record">
+            <div class="record__row"><dt>来源</dt><dd>TGIF2</dd></div>
+            <div class="record__row"><dt>样本</dt><dd>104782</dd></div>
+            <div class="record__row"><dt>编辑</dt><dd>flux1dev</dd></div>
+            <div class="record__row"><dt>载荷</dt><dd>100 位</dd></div>
+            <div class="record__row"><dt>定位 F1</dt><dd>0.9978</dd></div>
+            <div class="record__row"><dt>尺寸</dt><dd>512 × 512</dd></div>
+          </dl>
+          <p class="record__foot">从图像中恢复 · 100 位载荷</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>看见这处改动。</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/nat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>原图</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/nat-pane-tampered.webp?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>篡改图</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/nat-pane-mask.webp?v=20261126" alt="" />
+            <figcaption>掩膜</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/nat-pane-pred.webp?v=20261126" alt="" />
+            <figcaption>预测掩膜</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>保留原图。</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/nat-pane-stego.webp?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/nat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>56,465</b> 像素</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>02</b> 自然图像</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>扫描中</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="上一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="下一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="记录"></button>
+      <button data-go="1" aria-label="改动" class="is-active"></button>
+      <button data-go="2" aria-label="原图"></button>
+    </div>
+  </section>
+
+  <!-- 03 · 遥感影像 -->
+  <section class="panel panel--satellite" data-panel="satellite" aria-label="遥感影像">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/sat-record.webp?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>读取记录。</h2>
+          <dl class="record">
+            <div class="record__row"><dt>来源</dt><dd>Sentinel-2 L2A</dd></div>
+            <div class="record__row"><dt>芯片</dt><dd>339</dd></div>
+            <div class="record__row"><dt>载荷</dt><dd>100 位</dd></div>
+            <div class="record__row"><dt>定位 F1</dt><dd>0.9901</dd></div>
+            <div class="record__row"><dt>掩膜</dt><dd>不规则</dd></div>
+            <div class="record__row"><dt>尺寸</dt><dd>512 × 512</dd></div>
+          </dl>
+          <p class="record__foot">从图像中恢复 · 100 位载荷</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>看见这处改动。</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/sat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>原图</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/sat-pane-tampered.webp?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>篡改图</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/sat-pane-mask.webp?v=20261126" alt="" />
+            <figcaption>掩膜</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/sat-pane-pred.webp?v=20261126" alt="" />
+            <figcaption>预测掩膜</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>保留原图。</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/sat-pane-stego.webp?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/sat-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>8,930</b> 像素</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>03</b> 遥感影像</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>扫描中</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="上一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="下一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="记录"></button>
+      <button data-go="1" aria-label="改动" class="is-active"></button>
+      <button data-go="2" aria-label="原图"></button>
+    </div>
+  </section>
+
+  <!-- 04 · 文档图像 -->
+  <section class="panel panel--legal" data-panel="legal" aria-label="文档图像">
+    <div class="panel__track" data-track>
+      <article class="slide slide--record" data-slide="record">
+                <div class="slide__media"><img src="assets/img/legal-record.webp?v=20261126" alt="" /></div>
+        <div class="slide__shade" aria-hidden="true"></div>
+        <div class="record-scan" aria-hidden="true"></div>
+        <div class="slide__center slide__center--record">
+          <h2>读取记录。</h2>
+          <dl class="record">
+            <div class="record__row"><dt>来源</dt><dd>AIForge-Doc</dd></div>
+            <div class="record__row"><dt>页面</dt><dd>000000437.png</dd></div>
+            <div class="record__row"><dt>载荷</dt><dd>100 位</dd></div>
+            <div class="record__row"><dt>定位 F1</dt><dd>0.9972</dd></div>
+            <div class="record__row"><dt>尺寸</dt><dd>512 × 512</dd></div>
+            <div class="record__row"><dt>字段</dt><dd>篡改</dd></div>
+          </dl>
+          <p class="record__foot">从图像中恢复 · 100 位载荷</p>
+        </div>
+      </article>
+
+      <article class="slide slide--locate is-active" data-slide="locate">
+        <div class="locate-head"><h1 data-headline>看见这处改动。</h1></div>
+        <div class="locate-grid">
+          <figure class="locate-pane">
+            <img src="assets/img/legal-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>原图</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--tampered">
+            <img src="assets/img/legal-pane-tampered.webp?v=20261126" alt="" />
+            <span class="locate-scanline" aria-hidden="true"></span>
+            <figcaption>篡改图</figcaption>
+          </figure>
+          <figure class="locate-pane">
+            <img src="assets/img/legal-pane-mask.webp?v=20261126" alt="" />
+            <figcaption>掩膜</figcaption>
+          </figure>
+          <figure class="locate-pane locate-pane--pred">
+            <img src="assets/img/legal-pane-pred.webp?v=20261126" alt="" />
+            <figcaption>预测掩膜</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="slide slide--restore" data-slide="restore">
+        <div class="restore-head"><h2>保留原图。</h2></div>
+        <div class="restore-grid">
+          <figure class="restore-pane restore-pane--stego">
+            <img src="assets/img/legal-pane-stego.webp?v=20261126" alt="" />
+            <span class="restore-scanline" aria-hidden="true"></span>
+            <figcaption>Stego</figcaption>
+          </figure>
+          <figure class="restore-pane restore-pane--cover">
+            <img src="assets/img/legal-pane-cover.webp?v=20261126" alt="" />
+            <figcaption>Cover</figcaption>
+          </figure>
+        </div>
+        <span class="slide__count" data-count><b>4,681</b> 像素</span>
+      </article>
+    </div>
+
+    <span class="panel__label"><b>04</b> 文档图像</span>
+    <span class="panel__state" data-state>
+      <span class="dot" aria-hidden="true"></span>
+      <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.4 4.6 9.5 10.5 2.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-state-text>扫描中</span>
+    </span>
+
+    <button class="panel__arrow panel__arrow--prev" data-prev aria-label="上一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="panel__arrow panel__arrow--next" data-next aria-label="下一张">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="panel__dots" data-dots>
+      <button data-go="0" aria-label="记录"></button>
+      <button data-go="1" aria-label="改动" class="is-active"></button>
+      <button data-go="2" aria-label="原图"></button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>© 2026 归源科技 · VeriOrigin</span>
+    <span class="footer__right">
+      <a href="index.html">EN</a>
+    </span>
+  </div>
+  <div class="footer__credits">图像：LIDC-IDRI（CT）· Sentinel-2 L2A（ESA）· AIForge-Doc · TGIF2；掩膜与文档：VeriOrigin</div>
+</footer>
+<script src="assets/js/scenes.js?v=20261125" defer></script>
+</body>
+</html>
