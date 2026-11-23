@@ -1243,3 +1243,7 @@ html { scroll-snap-type: none; scroll-behavior: auto; }
   .locate-row--top .locate-pane,
   .locate-row--bottom .locate-pane { flex: 0 0 44vw; }
 }
+
+
+/* locate: five panes in one row, up to 340px each on wide screens */
+.locate-grid { width: min(1732px, 96vw); }
