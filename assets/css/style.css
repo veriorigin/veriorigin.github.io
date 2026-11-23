@@ -1210,3 +1210,19 @@ html { scroll-snap-type: none; scroll-behavior: auto; }
   .slide--restore { padding: 9vh 5vw 12vh; }
   .restore-grid { width: 88vw; gap: 10px; }
 }
+
+
+/* locate: 3+2 rows, larger panes, residual top-centre */
+.locate-grid { display: flex; flex-direction: column; align-items: center; gap: 10px; width: auto; }
+.locate-row { display: flex; gap: 10px; justify-content: center; align-items: center; }
+.locate-row--top .locate-pane,
+.locate-row--bottom .locate-pane { width: 340px; flex: 0 0 340px; }
+@media (max-width: 1200px) {
+  .locate-row--top .locate-pane,
+  .locate-row--bottom .locate-pane { width: 280px; flex-basis: 280px; }
+}
+@media (max-width: 800px) {
+  .locate-row { flex-wrap: wrap; }
+  .locate-row--top .locate-pane,
+  .locate-row--bottom .locate-pane { width: 42vw; flex-basis: 42vw; }
+}
