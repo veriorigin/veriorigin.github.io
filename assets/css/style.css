@@ -1226,3 +1226,20 @@ html { scroll-snap-type: none; scroll-behavior: auto; }
   .locate-row--top .locate-pane,
   .locate-row--bottom .locate-pane { width: 42vw; flex-basis: 42vw; }
 }
+
+
+/* locate: keep all five in one row */
+.locate-grid {
+  display: flex; flex-direction: row; align-items: center; justify-content: center;
+  gap: 8px; width: min(1300px, 92vw);
+}
+.locate-row { display: contents; }
+.locate-row--top .locate-pane,
+.locate-row--bottom .locate-pane {
+  width: auto; flex: 1 1 0; min-width: 0;
+}
+@media (max-width: 800px) {
+  .locate-grid { width: 96vw; overflow-x: auto; justify-content: flex-start; }
+  .locate-row--top .locate-pane,
+  .locate-row--bottom .locate-pane { flex: 0 0 44vw; }
+}
